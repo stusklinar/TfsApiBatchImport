@@ -38,9 +38,9 @@ namespace TfsApiBatchImport
 
         public void Run()
         {
-            string connectionUrl = "https://stuartalexanderltd.visualstudio.com/";
+            string connectionUrl = "URL";
             string projectName = "Development";
-            string personalAccessToken = "2uvspdskgzz2tirhtx5sjhfi6kbvqukwaklsj3ycdbrwna3hka7q";
+            string personalAccessToken = "KEY";
             string basicAuthHeaderValue = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", "pat", personalAccessToken)));
 
             List<BatchRequest> batchRequests = new List<BatchRequest>();
